@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
-    padding: 2% 20% 0% 20%;
+    padding: 2% 15% 0% 15%;
     font-family: 'PT Sans',sans-serif;
     font-weight: 400;
     font-style: normal;

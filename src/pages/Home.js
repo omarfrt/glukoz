@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import styled from "styled-components";
-import Video from "../components/Video";
+import { VideoLeft, VideoRight } from "../components/Video";
+
 
 const HomeContainer = styled.div`
 display: flex;
@@ -17,7 +18,7 @@ text-align: center;
 `;
 const Title = styled.h1`
 margin-bottom: 0.7em;
-max-width: 1200px;
+max-width: 100%;
 font-size: 1.8em;
 text-transform: uppercase;
 text-align: center;
@@ -27,7 +28,7 @@ font-weight: 400;
 `
 const TitleDescription = styled.h2`
 margin-bottom: 1.1em;
-max-width: 1200px;
+max-width: 100%;
 text-align: center;
 line-height: 28px;
 font-size: 15px;
@@ -41,8 +42,8 @@ const Home = ()=>{
             <Title> Portfolio</Title>
             <TitleDescription>Below you can see just a couple of my favorite videos I have edited.</TitleDescription>
         </PageDescription>
-        <Video/>
-        <Video/>
+        <VideoRight/>
+        <VideoLeft/>
         </HomeContainer>
     )
 }
